@@ -1,0 +1,231 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	position: relative;
+	font-family: 'Montserrat', sans-serif;
+	background-color: white !important;
+}
+
+nav {
+	.navbar-brand {
+		font-size: 35px;
+		font-family: 'Delius', cursive;
+		text-transform: uppercase;
+		letter-spacing: 3px;
+	}
+
+	.navbar-nav {
+		margin: 10px;
+		text-transform: uppercase;
+		font-size: 19px;
+		letter-spacing: 2px;
+	}
+
+	.facebook {
+		font-size: 35px;
+		text-decoration: none;
+		color: rgb(196, 48, 48);
+		transition: color 0.3s;
+	}
+
+	.facebook:hover {
+		color: rgb(255, 255, 255);
+	}
+}
+
+////////// STRONA GŁÓWNA ////////////
+
+header {
+	.header-img {
+		height: 100vh;
+		background-image: url('/img/AdobeStock_84926618.jpeg');
+		background-size: cover;
+		background-attachment: fixed;
+	}
+
+	// .header-text {
+	// 	// position: absolute;
+	// 	top: 50%;
+	// 	left: 70%;
+	// 	transform: translate(-50%, -50%);
+	// 	color: black;
+	// }
+
+	// .header-text h1 {
+	// 	font-size: 60px;
+	// 	margin-bottom: 15px;
+	// 	text-transform: uppercase;
+	// 	letter-spacing: 2px;
+	// 	color: red;
+	// }
+
+	// .header-text p {
+	// 	font-size: 20px;
+	// }
+
+	.header-text {
+		position: absolute;
+		top: 50%;
+		left: 60%;
+		transform: translate(-30%, -70%);
+
+		h1 {
+			font-size: 50px;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			color: red;
+		}
+
+		p {
+			font-size: 20px;
+		}
+	}
+}
+
+////////// OFERTA ///////////
+
+header {
+	.header-img-o {
+		position: relative;
+		height: 430px;
+		background-image: url('/img/AdobeStock_84926618.jpeg');
+		background-size: cover;
+		// background-position: center;
+		background-attachment: fixed;
+	}
+}
+
+main {
+	.h2-tittle {
+		// font-family: 'Caveat', cursive;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		font-size: 30px;
+	}
+
+	.underline {
+		margin: 0 auto;
+		width: 300px;
+		height: 4px;
+		background-color: red;
+	}
+
+	.underline-paznokcie {
+		margin: 0 auto;
+		width: 450px;
+		height: 4px;
+		background-color: red;
+	}
+
+	.card-title {
+		font-size: 25px;
+	}
+}
+
+////////// tabela ///////////
+
+main {
+	.thead {
+		text-transform: uppercase;
+		font-size: 19px;
+		background-color: #dc3545;
+	}
+
+	.linki a {
+		text-decoration: none;
+		color: #dc3545;
+		// font-family: 'Caveat', cursive;
+		font-family: 'Arima Madurai', cursive;
+		font-size: 30px;
+	}
+}
+
+
+////////// zapisy ///////////
+
+main {
+	.zapisy {
+		font-size: 33px;
+	}
+
+	.beautyprof {
+		// font-family: 'Caveat', cursive;
+		font-family: 'Delius', cursive;
+		color: #dc3545;
+		font-size: 37px;
+		
+	}
+
+	.numbert {
+		// font-family: 'Caveat', cursive;
+		font-family: 'Delius', cursive;
+		color: #dc3545;
+		font-size: 37px;
+		font-weight: bold;
+	}
+}
+
+footer {
+	.footer-text {
+		color: rgb(196, 48, 48);
+		text-transform: uppercase;
+		font-size: 20px;
+	}
+}
+
+
+////////// galeria ///////////
+
+
+.portfolio-menu ul li{
+	padding:10px 15px;
+}
+
+
+.portfolio-item .item{
+	margin-bottom:10px;
+	transition: transform .5s ease-out;
+}
+
+.portfolio-item .item:hover{
+	transform: scale(1.5);
+}
+
+
+@media (min-widht: 375px) {
+	header {
+		h1 {
+			font-size: 10px;
+		}
+		p {
+			font-size: 20px;
+		}
+	}
+}
+
+/* ============ desktop view ============ */
+@media all and (min-width: 992px) {
+	.dropdown-menu li {
+		position: relative;
+	}
+	.nav-item .submenu {
+		display: none;
+		position: absolute;
+		left: 100%;
+		top: -7px;
+	}
+	.nav-item .submenu-left {
+		right: 100%;
+		left: auto;
+	}
+	.dropdown-menu > li:hover {
+		background-color: #f1f1f1;
+	}
+	.dropdown-menu > li:hover > .submenu {
+		display: block;
+	}
+}
